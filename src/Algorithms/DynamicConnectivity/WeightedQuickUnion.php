@@ -4,6 +4,8 @@ namespace mespinosaz\Algorithms\DynamicConnectivity;
 
 class WeightedQuickUnion extends QuickUnion
 {
+    private $nodeSize;
+
     public function __construct($numberOfNodes)
     {
         parent::__construct($numberOfNodes);
