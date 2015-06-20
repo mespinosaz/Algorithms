@@ -1,0 +1,14 @@
+{
+    "name": "mespinosaz/algorithms",
+    "autoload": {
+        "psr-4": {"mespinosaz\\": "src/"}
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marc Espinosa",
+            "email": "marc@drizzt.ws"
+        }
+    ],
+    "minimum-stability": "stable"
+}
