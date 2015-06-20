@@ -4,11 +4,17 @@ namespace mespinosaz\Algorithms\DynamicConnectivity;
 
 class QuickFind extends AbstractConnectivityAlgorithm implements ConnectivityAlgorithmInterface
 {
+    /**
+     * {@inheritdoc}
+     */
     public function areConnected($p, $q)
     {
         return $this->nodes[$p] == $this->nodes[$q];
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function connect($p, $q)
     {
         $pid = $this->nodes[$p];

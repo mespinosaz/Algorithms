@@ -4,8 +4,14 @@ namespace mespinosaz\Algorithms\DynamicConnectivity;
 
 class WeightedQuickUnion extends QuickUnion
 {
+    /**
+     * @var array
+     */
     private $nodeSize;
 
+    /**
+     * {@inheritdoc}
+     */
     public function __construct($numberOfNodes)
     {
         parent::__construct($numberOfNodes);
@@ -15,6 +21,9 @@ class WeightedQuickUnion extends QuickUnion
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function connect($p, $q)
     {
         $rootP = $this->obtainRoot($p);

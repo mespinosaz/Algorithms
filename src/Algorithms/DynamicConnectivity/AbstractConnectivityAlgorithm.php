@@ -4,8 +4,14 @@ namespace mespinosaz\Algorithms\DynamicConnectivity;
 
 abstract class AbstractConnectivityAlgorithm
 {
+    /**
+     * @var array
+     */
     protected $nodes;
 
+    /**
+     * @param int $numberOfNodes
+     */
     public function __construct($numberOfNodes)
     {
         $this->nodes = array();

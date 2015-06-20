@@ -6,9 +6,13 @@ use mespinosaz\Algorithms\DynamicConnectivity\ConnectivityAlgorithmInterface;
 
 class BulkConnector
 {
-    public function connect(ConnectivityAlgorithmInterface $algorithm, $string)
+    /**
+     * @param ConnectivityAlgorithmInterface $algorithm
+     * @param string $connections
+     */
+    public function connect(ConnectivityAlgorithmInterface $algorithm, $connections)
     {
-        $pairs = explode(' ', $string);
+        $pairs = explode(' ', $connections);
 
         foreach ($pairs as $pair) {
             list($p, $q) = explode('-', $pair);
